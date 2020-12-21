@@ -2,7 +2,11 @@
 @import "~ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
 
 :root {
-  --color-bg-selected: gold;
+  --color-bg: 255, 215, 0;
+  --color-bg-selected: rgba(var(--color-bg), 0.4);
+  --color-bg-selected-2: rgba(var(--color-bg), 0.6);
+  --color-bg-selected-3: rgba(var(--color-bg), 0.8);
+  --color-bg-selected-4: rgba(var(--color-bg), 1);
 }
 
 .ag-theme-custom-angular {
@@ -12,7 +16,10 @@
     row-hover-color: null,
     checkbox-checked-color: #2661ad,
     range-selection-background-color: var(--color-bg-selected),
-    range-selection-border-color: #ff00b1,
+    range-selection-background-color-2: var(--color-bg-selected-2),
+    range-selection-background-color-3: var(--color-bg-selected-3),
+    range-selection-background-color-4: var(--color-bg-selected-4),
+    range-selection-border-color: #ff00b1
   ));
 
   .ag-menu-option-active {
