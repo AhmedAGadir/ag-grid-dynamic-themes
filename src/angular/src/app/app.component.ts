@@ -75,6 +75,6 @@ export class AppComponent {
   };
 
   updateRangeSelectionBkgColor() {
-    document.documentElement.style.setProperty('--color-bg-selected', 'limegreen');
+    document.documentElement.style.setProperty('--color-bg', '50, 205, 50');
   }
 }
